@@ -9,8 +9,8 @@ Method | Endpoint | Usage |
 | ---- | ---- | --------------- |
 |POST| `/api/v1/auth/signup` |  Register a user. |
 |POST| `api/v1/auth/login` | Login user.|
-|POST| `api/v1/books` | share a book. |
-|GET| `api/v1/books` | get all all books. |
+|POST| `api/v1/books` | Share a book. |
+|GET| `api/v1/books` | Get all all books. |
 |GET| `api/v1/books/user` | Get all the books created by the current user who is logged in. |
 |GET| `api/v1/books/<book_id>` | Get a single book. |
 |PUT| `api/v1/books/<book_id>/title` | Update a book title. |
