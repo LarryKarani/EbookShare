@@ -1,4 +1,4 @@
-# -EbookShare
+# EbookShare
 EbookShare  is a platform that connects readers around the world by enabling  them to share Ebooks from their google drives.
 
 ### Framework used
