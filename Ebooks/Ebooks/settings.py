@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'Ebooks.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'books',
+        'USER': os.getenv('user'),
+        'PASSWORD': os.getenv('password'),
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
     }
 }
 
@@ -120,3 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#REST GLOBAL SETTINGS
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permission
+    # or allow read-only acces for unauthenticated users.
+
+    'DEFAULT_PERMISSION_CLASSES': [], 
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
