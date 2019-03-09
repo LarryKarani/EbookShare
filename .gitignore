@@ -1,2 +1,10 @@
-../.vscode
-BookManager/migrationsss
+.vscode
+.DS_Store
+Ebooks/.DS_Store
+Ebooks/BookManager/__pycache__/
+Ebooks/BookManager/migrations/__pycache__/
+Ebooks/BookManager/tests/__pycache__/
+Ebooks/Ebooks/__pycache__/
+Ebooks/Account/__pycache__/
+Ebooks/Account/migrations/__pycache__/
+Ebooks/Account/tests/__pycache__/
